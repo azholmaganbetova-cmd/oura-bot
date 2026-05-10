@@ -19,9 +19,11 @@ from telegram.ext import (
 # ──────────────────────────────────────────────
 # НАСТРОЙКИ
 # ──────────────────────────────────────────────
-OURA_TOKEN    = "YOUR_OURA_TOKEN"
-ANTHROPIC_KEY = "YOUR_ANTHROPIC_KEY"
-TG_BOT_TOKEN  = "YOUR_TELEGRAM_BOT_TOKEN"
+import os
+
+OURA_TOKEN    = os.environ["OURA_TOKEN"]
+ANTHROPIC_KEY = os.environ["ANTHROPIC_KEY"]
+TG_BOT_TOKEN  = os.environ["TG_BOT_TOKEN"]
 
 MARATHON_DATE = date(2026, 9, 27)
 
